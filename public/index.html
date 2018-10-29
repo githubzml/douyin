@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dva Demo</title>
+  <link rel="stylesheet" href="../src/assets/common/common.css">
+  <link rel="stylesheet" href="index.css" />
+  <script>
+    var func = () => {
+      document.documentElement.style.fontSize = (window.innerWidth) / 750 * 100 + 'px';
+    }
+    (window.onload = func) && (window.onresize = func) && func();
+
+
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?43f9fa7940cd10317e4d5c75954556ed";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+
+  </script>
+</head>
+
+<body>
+
+  <div id="root"></div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
